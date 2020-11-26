@@ -32,22 +32,22 @@ while True:
     # Untuk menambahkan data
     elif g.lower() == "t":
         print("Tambah Data")
-        nim = int(input("NIM            : "))
-        nama = input("Nama              : ")
-        uts = int(input("Nilai UTS      : "))
-        uas = int(input("Nilai UAS      : "))
-        tugas = int(input("NIlai Tugas  : "))
+        nim   = int(input("NIM            : "))
+        nama  = input    ("Nama           : ")
+        uts   = int(input("Nilai UTS      : "))
+        uas   = int(input("Nilai UAS      : "))
+        tugas = int(input("NIlai Tugas    : "))
         nilaiakhir = ((tugas) * 30 / 100 + (uts) * 35 / 100 + (uas) * 35 / 100)
         data[nama] = nim, tugas, uts, uas, nilaiakhir
     # Untuk mengubah data
     elif g.lower() == "u":
         print("Edit Data Nilai Mahasiswa")
-        nama = input(" Masukan Nama:")
+        nama = input("Masukan Nama      :")
         if nama in data.keys():
-            nim = input("NIM               :")
-            tugas = int(input("Nilai Tugas Baru  : "))
-            uts = int(input("Nilai UTS Baru    : "))
-            uas = int(input("Nilai UAS Baru    : "))
+            nim        = input("NIM               :")
+            tugas      = int(input("Nilai Tugas Baru  : "))
+            uts        = int(input("Nilai UTS Baru    : "))
+            uas        = int(input("Nilai UAS Baru    : "))
             nilaiakhir = ((tugas) * 30 / 100 + (uts) * 35 / 100 + (uas) * 35 / 100)
             data[nama] = nim, tugas, uts, uas, nilaiakhir
         else:
